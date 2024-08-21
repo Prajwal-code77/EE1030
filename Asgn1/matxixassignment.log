@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.9)  17 AUG 2024 11:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.9)  21 AUG 2024 15:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1294,12 +1294,6 @@ T1/txr/m/n/12 is:
  []
 
 
-Underfull \hbox (badness 4096) in paragraph at lines 93--96
-[]\OT1/txr/m/n/12 The area bounded by the curves $\OML/txmi/m/it/12 y \OT1/txr/
-m/n/12 =
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf
@@ -1329,7 +1323,7 @@ Package rerunfilecheck Info: File `matxixassignment.out' has not changed.
 Here is how much of TeX's memory you used:
  30416 strings out of 474222
  594619 string characters out of 5748734
- 1971975 words of memory out of 5000000
+ 1972975 words of memory out of 5000000
  51922 multiletter control sequences out of 15000+600000
  617714 words of font info for 153 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1340,7 +1334,7 @@ exmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on matxixassignment.pdf (2 pages, 52009 bytes).
+Output written on matxixassignment.pdf (2 pages, 50693 bytes).
 PDF statistics:
  166 PDF objects out of 1000 (max. 8388607)
  146 compressed objects within 2 object streams
