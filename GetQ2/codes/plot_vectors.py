@@ -28,7 +28,7 @@ try:
     line_points = eval(line_points_str)
 
     x_line, y_line = zip(*line_points)
-    shifted_origin = [0, 2]
+    shifted_origin = [2, 2]
 
     # Create the plot
     plt.quiver(*shifted_origin, *normal_vector, color='r', angles='xy', scale_units='xy', scale=1, 
