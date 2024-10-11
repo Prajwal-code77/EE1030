@@ -1,0 +1,230 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=8mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2023-April-10 Shift-1}
+\author{AI24BTECH11005 - Prajwal Naik}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+\setcounter{enumi}{15}
+ 
+%16
+    \item An arc PQ of a circle subtends a right angle at the centre O. The midpoint of the arcPq is R.If $\overrightarrow{OP}=\overrightarrow{u}$ and $\overrightarrow{OR}=\overrightarrow{v}$ and $\overrightarrow{OQ}=\alpha \overrightarrow{u}+\beta \overrightarrow{v}$, then $\alpha, \beta^2$ are the roots of the equation :
+        \begin{multicols}{1}
+            \begin{enumerate}
+                \item $3x^2-2x-1=0$
+                \item $3x^2+2x-1=0$
+                \item $x^2-x-2=0$
+                \item $x^2+x-2=0$
+            \end{enumerate}
+        \end{multicols}
+
+%17
+    \item A square piece of tin of side 30 cm is to be made into a box without top by cutting a square from each corner
+and folding up the flaps to form a box. If the volume of the box is maximum, then its surface area  is
+equal to :
+
+		\begin{multicols}{4}
+			\begin{enumerate}
+				\item 800
+				\item  1025
+				\item  900
+				\item  675
+			\end{enumerate}
+		\end{multicols}
+
+%18
+    \item Let O be the origin and the position vector of the point P be $-\hat{i}-2\hat{j}+3\hat{k}.$ If the position vectors of the A, B
+and C are $-2\hat{i}+\hat{j}-3\hat{k}$,$2\hat{i}+4\hat{j}-2\hat{k}$ and $-4\hat{i}+2\hat{j}-\hat{k}$ respectively, then the projection of the vector $\overrightarrow{OP}$ on a vector perpendicular to the vectors $\overrightarrow{AB},\overrightarrow{AC}$ is 
+        \begin{multicols}{4}
+            \begin{enumerate}
+              \item $\frac{10}{3}$
+              \item $\frac{8}{3}$
+              \item $\frac{7}{3}$
+              \item $3$
+            \end{enumerate}
+        \end{multicols}
+
+%19
+    \item If A is a $3\times 3$ matrix and $\abs{A}=2$, then $\abs{3adj\brak{\abs{3A}A^{2}}}$ is equal to :
+		\begin{multicols}{1}
+			\begin{enumerate}
+				\item 1
+    \item 2
+    \item $3^{10}$
+    \item None of the above
+			\end{enumerate}
+		\end{multicols}
+
+%20
+    \item 
+		\begin{multicols}{1}
+			\begin{enumerate}
+				
+				\item 76
+    \item 74
+     \item 70
+      \item 72
+			\end{enumerate}
+		\end{multicols}
+
+%21
+    \item The negation of the statement : $(p \lor q) \land (q \lor (\neg r))$ is
+    \begin{multicols}{1}
+            \begin{enumerate}
+              \item $((\neg p) \lor r)) \land (\neg q)$
+              \item  $((\neg p) \lor (\neg q) \land(\neg r)$
+              \item  $((\neg p) \lor (\neg q) \lor(\neg r)$
+              \item $(p \lor r) \land  (\neg q)$
+            \end{enumerate}
+        \end{multicols}
+%22
+    \item The shortest distance between the lines $\frac{x+2}{1}=\frac{y}{-2}=\frac{z-5}{2} $ and $\frac{x-4}{1}=\frac{y-1}{2}=\frac{z+3}{0}$ is :
+    \begin{multicols}{1}
+            \begin{enumerate}
+              \item 8
+              \item  7
+              \item  6
+              \item 9
+            \end{enumerate}
+        \end{multicols}
+
+%23
+    \item If the coefficient of  $x^7$ in $\brak{ax-\frac{1}{bx^2}}^{13}$ and the coefficient of $x^{-5}$ in $\brak{ax+\frac{1}{bx^2}}^{13}$ are equal, then $a^3b^4$ is equal to :
+\begin{multicols}{1}
+            \begin{enumerate}
+              \item 22
+              \item  44
+              \item  11
+              \item 33
+            \end{enumerate}
+        \end{multicols}
+%24
+    \item A line segment AB of length $\lambda$ moves such that the points A and B remain on the periphery of a circle of radius $\lambda$. The locus of the point, that divides the line segment AB in the ratio 2:3, is a circle of radius :
+    \begin{multicols}{1}
+            \begin{enumerate}
+              \item $\frac{2}{3}\lambda$
+              \item   $\frac{\sqrt{19}}{7}\lambda$
+              \item   $\frac{3}{5}\lambda$
+              \item  $\frac{\sqrt{19}}{5}\lambda$
+            \end{enumerate}
+        \end{multicols}
+%25
+    \item For the system of linear equations \\
+    $2x-y+3z=5$\\
+    $3x+2y-z=7$\\
+    $4x+5y+\alpha z=\beta$\\
+    Which of the following is not correct?
+    \begin{multicols}{1}
+            \begin{enumerate}
+              \item The system is inconsistent for $\alpha =-5,$ $\beta = 8$
+              \item The system has infinitely many solutions for $\alpha =-6$, $\beta = 9$
+              \item The system has a unique solution  for $\alpha =-5,$ $\beta = 8$
+              \item The system has infinitely many solutions for $\alpha =-5,$ $\beta = 8$
+            \end{enumerate}
+        \end{multicols}
+     
+    \item Let the first term a and the common ratio r of a geometric progression be positive integers. If the sum of squares of its first three is 33033, then the sum of these terms is equal to :
+    \begin{multicols}{4}
+            \begin{enumerate}
+              \item 210
+              \item 220
+              \item 231
+              \item 241
+            \end{enumerate}
+        \end{multicols}
+    
+    
+
+    \item Let P  be the point of intersection of the line $\frac{x+3}{3}=\frac{y+2}{1}=\frac{z-1}{-2}$ and the plane  $x+y+z=2$. If the distance of the point P from the plane $3x-4y+12z=32$ is q, then q and 2q are the roots of the equation :
+    \begin{multicols}{4}
+            \begin{enumerate}
+              \item $x^2+18x-72=0$
+              \item $x^2+18x+72=0$
+              \item $x^2-18x-72=0$
+              \item $x^2-18x+72=0$
+            \end{enumerate}
+        \end{multicols}
+    \item Let f be a differentiable function such that $x^2f\brak{x}-x=4\int_{0}^{4} tf(t)dt.$ $f(1)=\frac{2}{3}$. Then 18f(3) is  equal to :
+    \begin{multicols}{4}
+            \begin{enumerate}
+              \item 180
+              \item 150
+              \item 210
+              \item 160
+            \end{enumerate}
+        \end{multicols}
+    
+    \item Let N denote the sum of the numbers obtained when two dice are rolled. If the probability that $2^{N!} < N!$ is $\frac{m}{n}$. Where $\brak{m,n}=1$ , then $4m-3n$ equal to:
+    \begin{multicols}{4}
+            \begin{enumerate}
+              \item 180
+              \item 150
+              \item 210
+              \item 160
+            \end{enumerate}
+        \end{multicols}
+        \item If $I(x)=\int_ e^{\sin{x}^2} (\cos{x}\sin{2x}-\sin{x}) dx$ and $I\brak{0}=1$, then $I(\frac{\pi}{3})$ is equal to :
+        \begin{multicols}{4}
+            \begin{enumerate}
+              \item $e^{\frac{3}{4}}$
+              \item $-e^{\frac{3}{4}}$
+            \item $\frac{1}{2}e^{\frac{3}{4}}$
+              \item $-\frac{1}{2}e^{\frac{3}{4}}$
+            \end{enumerate}
+        \end{multicols}
+ \end{enumerate}
+
+\end{document}
