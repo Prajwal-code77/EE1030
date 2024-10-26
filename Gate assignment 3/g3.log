@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.11)  26 OCT 2024 20:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.9.11)  26 OCT 2024 21:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1676,14 +1676,38 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 3
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-) (./g3.aux)
+) (./g3.aux
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+)
 \openout1 = `g3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 39.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 39.
-
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 39.
@@ -1898,33 +1922,34 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
-) (./figures/441.tex) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/us
-r/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}
+) (./figs/441.tex)
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
+dist/fonts/enc/dvips/base/8r.enc}
 
-] (./figures/451.tex) (./figures/461.tex)
+] (./figs/451.tex) (./figs/461.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-(./figures/471.tex)
+(./figs/471.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-[4] (./figures/4711.tex) [5] (./figures/4712.tex) [6] (./figures/4713.tex)
-(./figures/4714.tex) [7] (./figures/5001.tex) [8] (./g3.aux)
+[4] (./figs/4711.tex) [5] (./figs/4712.tex) [6] (./figs/4713.tex)
+(./figs/4714.tex) [7] (./figs/5001.tex) [8] (./g3.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `g3.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  54485 strings out of 474222
- 1298765 string characters out of 5748733
+ 1298627 string characters out of 5748733
  1952975 words of memory out of 5000000
  75820 multiletter control sequences out of 15000+600000
  626233 words of font info for 174 fonts, out of 8000000 for 9000
