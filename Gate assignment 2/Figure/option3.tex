@@ -1,0 +1,29 @@
+% Diagram (C) - Dashed half ellipse with arrow, reflected in 4th quadrant
+\begin{tikzpicture}
+    % Axes
+    \draw[->] (0,0) -- (0,2.5) node[left] {$p_z$};
+    \draw[->] (0,-2.5) -- (0,0);
+    \draw[dashed] (0,0) -- (3.5,0) node[below] {$z$};
+    \draw[dashed] (-3.5,0) -- (0,0);
+    \node at (0,0) [below left] {O};
+    
+    % Dashed half ellipse (upper part)
+    \draw[dashed] (0,2) arc[start angle=90,end angle=0,x radius=3,y radius=2];
+    
+    % Reflection (lower part in 4th quadrant)
+    \draw[dashed] (0,-2) arc[start angle=270,end angle=360,x radius=3,y radius=2];
+    
+    % Inner ellipse in the upper part
+    \draw[dashed] (0,1.5) arc[start angle=90,end angle=0,x radius=1.5,y radius=1.5];
+    
+    % Reflection of the inner ellipse (lower part in the 4th quadrant)
+    \draw[dashed] (0,-1.5) arc[start angle=270,end angle=360,x radius=1.5,y radius=1.5];
+    
+    % Arrow on the upper part
+    \draw[->,thick] (1.6,1.2) to[out=140,in=-20] (0.8,1.6);
+    
+    % Arrow on the lower part
+    \draw[->,thick] (1.6,-1.2) to[out=-140,in=20] (0.8,-1.6);
+\end{tikzpicture}
+\hspace{1cm}
+

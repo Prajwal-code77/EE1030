@@ -1,0 +1,14 @@
+
+
+\begin{tikzpicture}
+    % Draw the axes
+    \draw[->] (-0.5,0) -- (4,0) node[right] {\(z\)}; % z-axis (horizontal)
+    \draw[->] (0,-1.5) -- (0,2) node[above] {\(P_z\)}; % y-axis
+    
+    % Draw the spiral ellipse
+    \draw[domain=0:2.5*pi, samples=100, smooth, variable=\t]
+        plot ({(2+\t/(2*pi)) * cos(\t r)}, {(1+\t/(2*pi)) * sin(\t r)});
+\end{tikzpicture}
+
+
+
