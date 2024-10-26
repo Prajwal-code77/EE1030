@@ -1,0 +1,47 @@
+\begin{figure}[!ht]
+\centering
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw  (5.75,13.75) circle (0.75cm);
+\draw [->, >=Stealth] (3.75,13.75) -- (5,13.75);
+\node [font=\small] at (3.25,13.75) {R(s)};
+\draw (5.25,13.25) to[short] (6.25,14.25);
+\node [font=\small] at (5.25,13.75) {+};
+\node [font=\small] at (5.75,13.5) {-};
+\draw [->, >=Stealth] (6.5,13.75) -- (7.75,13.75);
+\draw  (8.5,14) circle (0.75cm);
+\draw (8,14.5) to[short] (9,13.5);
+\draw (8,13.5) to[short] (9,14.5);
+\node [font=\large] at (8,14) {+};
+\node [font=\large] at (8.5,13.75) {-};
+\draw  (11,14.25) rectangle (13.25,13);
+\draw [->, >=Stealth] (9.25,14.25) -- (11,13.5);
+\node [font=\large] at (11.75,14.75) {Motor};
+\node [font=\large] at (12,13.75) {1/s(s+1)};
+\draw (13.25,13.75) to[short] (17.75,13.75);
+\draw [->, >=Stealth] (17.75,13.75) -- (18,13.75);
+\draw (17,13.75) to[short] (17,9.5);
+\draw (17,9.5) to[short] (5.75,9.5);
+\draw (5.75,13) to[short] (5.75,9.5);
+\draw [->, >=Stealth] (5.75,12.25) -- (5.75,13);
+\draw [->, >=Stealth] (8.25,12) -- (8.25,13.25);
+\draw (8.25,12) to[short] (10.25,12);
+\draw  (10.75,12) rectangle (12.25,11);
+\draw [short] (10.25,12) -- (10.75,12);
+\node [font=\small] at (11.25,11.5) {K s};
+\node [font=\normalsize] at (11.5,10.25) {Tacho-generator};
+\draw (12.25,12) to[short] (15,12);
+\draw (15,13.75) to[short] (15,12);
+\draw [->, >=Stealth] (13.25,12) -- (13,12);
+\draw [->, >=Stealth] (17,12.25) -- (17,11.75);
+\draw [->, >=Stealth] (13,9.5) -- (12.25,9.5);
+\draw (5.25,14.5) to[short] (5.75,14);
+\draw (5.25,14.5) to[short] (6.25,13.5);
+\draw (6,13.75) to[short] (6.5,13.25);
+\node [font=\normalsize] at (18.5,13.75) {Y(s)};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}

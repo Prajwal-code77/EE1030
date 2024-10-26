@@ -1,0 +1,38 @@
+\begin{figure}[!ht]
+\centering
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+
+\draw (11,11) to[sinusoidal voltage source, sources/symbol/rotate=auto] (13,11);
+\draw (11,11) to[R] (11,14);
+\draw (13.75,14.25) to[empty Zener diode] (11,14.25);
+\draw (11,14) to[short] (11,13.25);
+\draw (11,13.25) to[short] (11,14.25);
+\draw (13.75,14.25) to[short] (13.75,11);
+\draw (13,11) to[short] (13.75,11);
+\draw (11,14.25) to[short] (11,16);
+\draw (13,16) to[short, -o] (11,16) ;
+\draw (13.5,16) to[D] (13,16);
+\draw (13.5,16) to[short] (14.5,16);
+\draw (16,16) to[battery1] (16.75,16);
+\draw (14.5,16) to[short] (16,16);
+\draw (16.75,16) to[short] (16.75,14.25);
+\draw (13.75,14.25) to[short] (16.75,14.25);
+\draw (11,16) to[short, -o] (11,17.75) ;
+\draw (16.75,16) to[short, -o] (16.75,17.75) ;
+\draw [->, >=Stealth] (13,18) -- (11.25,18);
+\draw [->, >=Stealth] (13.75,18) -- (16.5,18);
+\draw [->, >=Stealth] (11.75,10.25) -- (11,10.25);
+\draw [->, >=Stealth] (12.5,10.25) -- (14,10.25);
+\node [font=\normalsize] at (10.25,12.25) {1k};
+\node [font=\normalsize] at (12,10.25) {$V_1$};
+\node [font=\normalsize] at (16.25,16.75) {5V};
+\node [font=\normalsize] at (12.25,13.75) {$V_z=10V$};
+\node [font=\normalsize] at (13.25,18) {$V_0$};
+\node [font=\normalsize] at (13.25,16.75) {D};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}

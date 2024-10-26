@@ -1,0 +1,28 @@
+\begin{figure}[!ht]
+\centering
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+
+\draw [short] (9.25,16.25) -- (9.25,10.5);
+\draw [short] (7,12) -- (18,12);
+\node [font=\normalsize] at (8.25,15.5) {$V_0$};
+\draw [->, >=Stealth] (8.25,16) -- (8.25,17);
+\draw [->, >=Stealth] (9.25,16.25) -- (9.25,17.5);
+\draw [->, >=Stealth] (18,12) -- (19.25,12);
+\draw [->, >=Stealth] (13.25,11.25) -- (15.25,11.25);
+\node [font=\normalsize] at (15.75,11.25) {$V_1$};
+\node [font=\normalsize] at (11,11.5) {4.3};
+\draw [dashed] (9.25,16.75) -- (12.75,16.75);
+\draw [short] (12.75,16.75) -- (16,16.75);
+\draw [short] (12.75,16.75) -- (11,14.75);
+\draw [dashed] (11,14.75) -- (11,12.25);
+\draw [short] (11,14.75) -- (7.25,14.75);
+\draw [dashed] (12.75,16.75) -- (12.75,12);
+\node [font=\normalsize] at (8.75,14.5) {4..3};
+\node [font=\normalsize] at (12.75,11.75) {10};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}

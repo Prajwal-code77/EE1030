@@ -1,0 +1,229 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Electrical Engineering-2011}
+\author{AI24BTECH11005 - Bhukya Prajwal Naik
+}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+\begin{enumerate}
+    
+
+ 
+
+    \item A capacitor is made with a polymetric dielectric having an $\epsilon_r$ of 2,26 and a dielectric breakdown strength of 50$\frac{kV}{cm}$ .The permitivity of free space is 8.85 $\frac{pF}{m}$ . If the rectangular plates of the capacitor have a width of 20cm and a length of 40cm , then the maximum electric charge in the capacitor is
+    \begin{multicols}{4}
+			\begin{enumerate}
+\item 2$\mu C$
+\item 4$\mu C$
+\item 8$\mu C$
+\item 10$\mu C$
+        \end{enumerate}
+		\end{multicols}
+
+
+    \item The response of a linear time invariant system to an implulse $\delta (t)$. under initially relaxed condition is $h(t)=e^-1 +e^-2t$. The response of this system for a unit step input $u(t)$ is
+
+
+		\begin{multicols}{4}
+			\begin{enumerate}
+	\item  $u(t) +h(t)$
+\item $u(t)*h(t)$
+\item$(1.5-h(t))u(t)$
+\item $h(t)((\delta  (t) + u(t))$
+			\end{enumerate}
+		\end{multicols}
+
+
+    \item The direct axis and quadrature axis reactances of a salient pole alternator are 1.2p.u and 1.0p.u respectively . The armature resistance is negligible .If this alternator is delivering rated kVA at upf and at rated voltage then its power angle is 
+        
+            \begin{enumerate}
+             \item $30\degree$
+\item $45\degree$.
+\item  $60\degree$
+\item $90\degree$            \end{enumerate}
+
+
+
+      
+
+
+    \item A $\frac{9}{2}$ digit DMM has the error specification as 0.2\% of reading 10 counts .If a dc voltage of 100V is read on its 200V full scale , the maximum error that can be expected  in the reading is 
+		\begin{multicols}{4}
+			\begin{enumerate}
+	\item $0.1 \%$
+\item $0.2 \%$
+\item $0.3 \%$
+\item $0.4 \%$
+
+	\end{enumerate}
+		\end{multicols}{1}
+
+ 
+    \item A three-bus network is shown in the figure below indicating the p.u impedance of each element
+    
+     \input{figures/441.tex}
+    \newpage
+		The bus admittance matrix Y-bus of the network is 
+			\begin{enumerate}
+				
+	\item j$\myvec{0.3 & -0.2 & 0 \\ -0.2 & 0.12 & 0.08 \\ 0 & 0.08 & 0.02}$
+\item j$\myvec{-15 & 5 & 0 \\ 5 & 7.5 & -12.5\\ 0& -12.5 & 2.5}$
+\item j$\myvec{0.1 & 0.2 & 0 \\ 0.2 & 0.12 & -0.08\\ 0& -0.08 & 0.10}$
+\item j$\myvec{10& 5 & 0 \\ 5 & 7.5 & 12.5\\ 0& 12.5 & -10}$
+			\end{enumerate}
+		
+
+
+    \item A two-loop position control system is shown below
+    \input{figures/451.tex}
+    The  gain k of the Tacho generator influences mainly the 
+    
+            \begin{enumerate}
+        \item peak overshoot
+        \item natural frequency of oscillation
+        \item phase shift of the closed loop transfer function at very low frequencies $(\omega \rightarrow 0)$
+        \item phase shift of the closed loop transfer function at very low frequencies $(\omega \rightarrow \infty)$
+        \end{enumerate}
+      
+
+    \item A two-bit counter circuit is shown below
+    \input{figures/461.tex}
+    In the state $Q_A Q_B$ of the counter at the clock time $t_n$ is 10, the the state $Q_A Q_B$ of the counter at $t_n +3$(after three clock cycles)  will be 
+    
+            \begin{enumerate}
+             \item 00
+\item 01
+\item 10
+\item 11 
+              \end{enumerate}
+        
+
+    \item A clipper circuit is shown below.
+    \input{figures/471.tex}
+    Assuming forward voltage drops of the diodes to be 0.7 V, the input-output transfer characteristics of the circuit is
+
+ \begin{enumerate}
+ \newpage
+\item \input{figures/4711.tex}
+\newpage
+\item \input{figures/4712.tex}
+\newpage
+\item \input{figures/4713.tex}
+
+\item \input{figures/4714.tex}
+            \end{enumerate}
+        
+
+\textbf{Common Data for the below two questions }
+The input voltage given to a converter is $v_i=100\sqrt{2} \sin(100\pi t)V$, The current drawn by the converter is $i_1=(10\sqrt{2} \sin (100\pi t-\frac{\pi}{3})+5\sqrt{2} \sin (300\pi t+\frac{\pi}{4})+2\sqrt{2}\sin (500\pi t-\frac{\pi}{6}))A$
+    \item Then the power factor  of the converter is 
+    \begin{multicols}{4}
+            \begin{enumerate}
+        \item 0.31
+\item 0.44
+\item  0.5
+\item 0.71
+            \end{enumerate}
+        \end{multicols}
+ 
+
+ 
+    \item Then the active power drawn by the converter is
+    \begin{multicols}{4}
+            \begin{enumerate}
+              \item 181 W
+              \item  500 W
+              \item  707 W
+              \item 887 W
+            \end{enumerate}
+        \end{multicols}
+        \textbf{Common Data for Questions 50 and 51:}
+        An RLC circuit with relevant data is given below:
+        \input{figures/5001.tex}
+        $V_S=1\langle 0 V$
+        $I_S=\sqrt{2}\langle \frac{\pi}{4}A$
+        $I_{RL}=\sqrt{2}\langle \frac{-\pi}{4}A$
+    
+     
+    \item The power dissipated in the resistor R
+    \begin{multicols}{4}
+            \begin{enumerate}
+              \item  0.5 W
+              \item 1 W
+              \item $\sqrt{2} W$
+              \item 2W 
+            \end{enumerate}
+        \end{multicols}
+    
+    
+
+    \item  The current $I_C$ in the figure above is
+   \begin{multicols}{4}
+            \begin{enumerate}
+            \item -j 2A
+            \item $-j \frac{1}{\sqrt{2}A}$
+            \item  $+j \frac{1}{\sqrt{2}A}$
+            \item +j 2A
+            \end{enumerate}
+             \end{multicols}
+       
+    
+        
+ 
+ \end{enumerate}
+
+\end{document}
