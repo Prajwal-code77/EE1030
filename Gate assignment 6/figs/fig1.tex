@@ -1,0 +1,24 @@
+\begin{figure}[!ht]
+\centering
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (4.75,15.5) to[short] (4.75,9);
+\draw (4.75,9) to[short] (13,9);
+\draw (4.75,9.5) to[L ] (6.5,9.5);
+\draw [short] (6.5,9.75) -- (6.5,9);
+\draw [short] (6.5,9.75) -- (7.5,9.75);
+\draw [short] (7.5,9.75) -- (7.5,9);
+\draw (7.5,9.5) to[L ] (9.25,9.5);
+\draw [short] (9.25,9.75) -- (9.25,9);
+\draw [short] (9.25,9.75) -- (10,9.75);
+\draw [short] (10,9.75) -- (10,9);
+\node [font=\normalsize] at (5.5,10.25) {K};
+\node [font=\normalsize] at (8.25,10.25) {K};
+\node [font=\large] at (7,9.5) {M};
+\node [font=\large] at (9.5,9.5) {M};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}

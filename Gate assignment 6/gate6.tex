@@ -1,0 +1,200 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{PH:PHYSICS-2013}
+\author{AI24BTECH11005 - Bhukya Prajwal Naik
+}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+\begin{enumerate}
+    
+
+ 
+%16
+    \item If $\vec{A}$ and $\vec{B}$ are constant vectors, then $\nabla(\vec{A} \cdot \vec{B} \times \vec{r})$ is
+   
+   \begin{multicols}{4}
+			\begin{enumerate}
+
+\item $\vec{A} \cdot \vec{B}$
+\item  $\vec{A} \times \vec{B}$
+\item $\vec{r}$
+
+\item Zero
+
+        \end{enumerate}
+		\end{multicols}
+  \item  $\Gamma(n+\frac{1}{2})$ is equal to [Given $\Gamma(n+1)=n \Gamma(n)$ and $\left.\Gamma(1 / 2)=\sqrt{\pi}\right]$
+   \begin{multicols}{4}
+			\begin{enumerate}
+\item  $\frac{n!}{2^{n}} \sqrt{\pi}$
+\item $\frac{2 n!}{n!2^{n}} \sqrt{\pi}$
+\item $\frac{2 n!}{n!2^{2 n}} \sqrt{\pi}$
+\item $\frac{n!}{2^{2 n}} \sqrt{\pi}$
+
+  \end{enumerate}
+		\end{multicols}
+  
+  \item The relativistic form of Newton's second law of motion is
+   \begin{multicols}{4}
+			\begin{enumerate}
+\item $F=\frac{m c}{\sqrt{c^{2}-v^{2}}} \frac{d v}{d t}$
+\item $ F=\frac{m \sqrt{c^{2}-v^{2}}}{c} \frac{d v}{d t}$
+\item  $F=\frac{m c^{2}}{c^{2}-v^{2}} \frac{d v}{d t}$
+\item  $F=m \frac{{c}^{2}-{v}^{2}}{{c}^{2}} \frac{d v}{d t}$
+   \end{enumerate}
+		\end{multicols}
+  \item Consider a gas of atoms obeying Maxwell-Boltzmann statistics. The average value of $e^{i \vec{a} \cdot \vec{p}}$ over all the momenta $\vec{p}$ of each of the particles (where $\vec{a}$ is a constant vector and $a$ is its magnitude, $m$ is the mass of each atom, $T$ is temperature and $k$ is Boltzmann's constant) is,
+   \begin{multicols}{4}
+			\begin{enumerate}
+   \item  One
+\item Zero
+\item $e^{-\frac{1}{2} a^{2} m k T}$
+\item $e^{-\frac{3}{2} a^{2} m k T}$
+\end{enumerate}
+		\end{multicols}
+  \item The electromagnetic form factor $F(q^{2})$ of a nucleus is given by,
+$$
+F(q^{2})=\exp [-\frac{q^{2}}{2 Q^{2}}]
+$$
+where $Q$ is a constant. Given that
+$$
+\begin{gathered}
+F(q^{2})=\frac{4 \pi}{q} \int_{0}^{\infty} r d r \rho(r) \sin q r \\
+\int d^{3} r \rho(r)=1
+\end{gathered}
+$$
+where $\rho(r)$ is the charge density, the root mean square radius of the nucleus is given by,
+  Primeval
+   \begin{multicols}{4}
+			\begin{enumerate}
+   \item $\frac{1} { Q}$
+\item $\frac{\sqrt{2}}  {Q}$
+\item$\frac{\sqrt{3}} { Q}$
+\item $\frac{\sqrt{6}} { Q}$
+\end{enumerate}
+		\end{multicols}
+  \item  A uniform circular disk of radius $R$ and mass $M$ is rotating with angular speed $\omega$ about an axis, passing through its center and inclined at an angle 60 degrees with respect to its symmetry axis. The magnitude of the angular momentum of the disk is,
+  \begin{multicols}{4}
+			\begin{enumerate}
+\item $\frac{\sqrt{3}}{4} \omega M R^{2}$
+\item $\frac{\sqrt{3}}{8} \omega M R^{2}$
+\item $\frac{\sqrt{7}}{8} \omega M R^{2}$
+\item $\frac{\sqrt{7}}{4} \omega M R^{2}$
+\end{enumerate}
+		\end{multicols}
+  \item Consider two small blocks, each of mass $M$, attached to two identical springs. One of the springs is attached to the wall, as shown in the figure. The spring constant of each spring is $k$. The masses slide along the surface and the friction is negligible. The frequency of one of the normal modes of the system is,
+  \input{figs/fig1.tex}
+   \begin{multicols}{4}
+			\begin{enumerate}
+  \item$\sqrt{\frac{3+\sqrt{2}}{2}} \sqrt{\frac{k}{M}}$
+\item $\sqrt{\frac{3+\sqrt{3}}{2}} \sqrt{\frac{k}{M}}$
+\item$\sqrt{\frac{3+\sqrt{5}}{2}} \sqrt{\frac{k}{M}}$
+\item $\sqrt{\frac{3+\sqrt{6}}{2}} \sqrt{\frac{k}{M}}$
+\end{enumerate}
+		\end{multicols}
+  
+\item    A charge distribution has the charge density given by $\rho=Q\{\delta(x-x_{0})-\delta(x+x_{0})\}$. For this charge distribution the electric field at $(2 x_{0}, 0,0)$
+\begin{multicols}{4}
+			\begin{enumerate}
+
+\item  $\frac{2 Q \hat{x}}{9 \pi \epsilon_{0} x_{0}^{2}}$
+\item  $\frac{Q \hat{x}}{4 \pi \epsilon_{0} x_{0}^{3}}$
+\item  $\frac{{Q} \hat{x}}{4 \pi \epsilon_{0} x_{0}^{2}}$
+\item  $\frac{{Q} \hat{{x}}}{16 \pi \epsilon_{0} x_{0}^{2}}$
+   \end{enumerate}
+		\end{multicols}
+  \item   A monochromatic plane wave at oblique incidence undergoes reflection at a dielectric interface. If $\hat{k}_{i}, \hat{k}_{r}$ and $\hat{n}$ are the unit vectors in the directions of incident wave, reflected wave and the normal to the surface respectively, which one of the following expressions is correct?
+  \begin{multicols}{4}
+			\begin{enumerate}
+   \item$(\hat{k}_{i}-\hat{k}_{r}) \times \hat{n} \neq 0$
+\item $(\hat{k}_{i}-\hat{k}_{r}) \cdot \hat{n}=0$
+\item  $(\hat{k}_{i} \times \hat{n}) \cdot \hat{k}_{r}=0$
+\item $(\hat{k}_{i} \times \hat{n}) \cdot \hat{k}_{r} \neq 0$
+ \end{enumerate}
+		\end{multicols}
+  \item  In a normal Zeeman effect experiment, spectral splitting of the line at the wavelength 643.8 nm corresponding to the transition $5{ }^{1} D_{2} \rightarrow 5{ }^{1} P_{1}$ of cadmium atoms is to be observed. The spectrometer has a resolution of 0.01 nm . The minimum magnetic field needed to observe this is $(m_{e}=9.1 \times 10^{-31} {~kg}, e=1.6 \times 10^{-19} {C}, c=3 \times 10^{8} \mathrm{~m} / \mathrm{s}.$ )
+ 
+			\begin{enumerate}
+   \item $0.26 T$
+\item  $0.52 T$
+\item $2.6 T$
+\item$5.2 T$
+ \end{enumerate}
+	
+  \item The spacing between vibrational energy levels in CO molecule is found to be $8.44 \times 10^{-2} \mathrm{eV}$. Given that the reduced mass of CO is $1.14 \times 10^{-26} \mathrm{~kg}$, Planck's constant is $6.626 \times 10^{-34} \mathrm{Js}$ and $1 \mathrm{eV}=1.6 \times 10^{-19} \mathrm{~J}$. The force constant of the bond in CO molecule is
+  
+
+\begin{multicols}{4}
+			\begin{enumerate}
+   \item $1.87 {~N} / {m}$
+\item $18.7 {~N} / {m}$
+\item $187 {~N} / {m}$
+\item $1870 {~N} / {m}$
+\end{enumerate}
+		\end{multicols}
+  \item   A lattice has the following primitive vectors (in $\AA$ ): $\vec{a}=2(\hat{\hat j}+\hat{k}), \quad \vec{b}=2(\hat{k}+\hat{i}), \quad \vec{c}=2(\hat{i}+\hat{j})$. The reciprocal lattice corresponding to the above lattice is
+ 
+			\begin{enumerate}
+   \item BCC lattice with cube edge of $(\frac{\pi}{2}) \AA^{-1}$
+\item BCC lattice with cube edge of $(2 \pi) \AA^{-1}$
+\item FCC lattice with cube edge of $(\frac{\pi}{2}) \AA^{-1}$
+\item FCC lattice with cube edge of $(2 \pi) \AA^{-1}$
+  \end{enumerate}
+		
+ \end{enumerate}
+
+\end{document}
