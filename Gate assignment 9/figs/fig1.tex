@@ -1,0 +1,47 @@
+\begin{figure}[!ht]
+\centering
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw (9,13.75) to[short] (12.25,13.75);
+\draw (12.25,13.75) to[short] (12.25,12.25);
+\draw (12.25,12.25) to[short] (14,12.25);
+\draw (14,12.25) to[short] (14,16.25);
+\draw (14,16.25) to[short] (6.25,16.25);
+\draw (6.25,16.25) to[short] (6.25,8.75);
+\draw (6.25,8.75) to[short] (14.25,8.75);
+\draw (12.25,11.75) to[short] (14.25,11.75);
+\draw (12.25,11.75) to[short] (12.25,10.5);
+\draw (12.25,10.5) to[short] (8.75,10.5);
+\draw (9,13.75) to[short] (11,13.75);
+\draw (9,13.75) to[short] (9,10.5);
+\draw (14.25,11.75) to[short] (14.25,8.75);
+\draw [ dashed] (7.75,14.5) rectangle  (13,9.75);
+\draw [->, >=Stealth] (5.25,13.25) -- (5.75,13.25);
+\draw [short] (5.75,13.25) -- (9.5,13.25);
+\draw (6,12.75) to[short] (9.75,12.75);
+\draw (6,12.25) to[short] (9.75,12.25);
+\draw (6,11.75) to[short] (9.75,11.75);
+\draw (6,11.25) to[short] (10,11.25);
+\draw (6,10.75) to[short] (9.75,10.75);
+\draw [->, >=Stealth] (6.25,9.75) -- (5.5,9.75);
+\draw (5.5,9.75) to[short, -o] (4.75,9.75) ;
+\draw (5.25,13.25) to[short, -o] (4.75,13.25) ;
+\node [font=\LARGE] at (5.25,14) {I};
+\draw [->, >=Stealth] (14.75,13.25) -- (14.75,12.25);
+\draw [->, >=Stealth] (14.75,11) -- (14.75,11.75);
+\node [font=\LARGE] at (15.5,12) {0.2 cm};
+\draw (7.5,18) to[short] (7.5,17);
+\draw (12.75,18) to[short] (12.75,17);
+\draw [<->, >=Stealth] (7.5,17.5) -- (12.75,17.5);
+\node [font=\LARGE] at (10,18.5) {10 cm};
+\draw (3,14.75) to[short] (4.25,14.75);
+\draw (3,9.75) to[short] (3.75,9.75);
+\draw (3,9.75) to[short] (4.25,9.75);
+\draw [<->, >=Stealth] (3.75,14.75) -- (3.75,9.75);
+\node [font=\LARGE] at (2.5,12.25) {10 cm};
+\end{circuitikz}
+}%
+
+\label{fig:my_label}
+\end{figure}

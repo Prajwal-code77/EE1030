@@ -1,0 +1,119 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{ME:ELECTRICAL ENGINEERING-2019}
+\author{AI24BTECH11005 - Bhukya Prajwal Naik
+}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+\begin{enumerate}
+    
+
+ 
+%16
+    \item  The voltage across and the current through a load are expressed as follows
+$v(t)=-170 \sin (377 t-\frac{\pi}{6}) $
+$i(t)=8 \cos (377 t+\frac{\pi}{6}) {A}$
+The average power in watts (round off to one decimal place) consumed by the load is
+.\rule{1cm}{0.15mm}.
+\hfill{\brak{2019}}
+ 
+  \item  The magnetic circuit shown below has uniform cross-sectional area and air gap of 0.2 cm . The mean path length of the core is 40 cm . Assume that leakage and fringing fluxes are negligible. When the core relative permeability is assumed to be infinite, the magnetic flux density computed in the air gap is 1 tesla. With same Ampere-turns, if the core relative permeability is assumed to be 1000 (linear), the flux density in tesla (round off to three decimal places) calculated in the air gap is \rule{1cm}{0.15mm}.
+  \input{figs/fig1.tex}
+  \hfill{\brak{2019}}
+
+ 
+  
+  \item  A single-phase transformer of rating 25 kVA , supplies a 12 kW load at power factor of 0.6 lagging. The additional load at unity power factor in kW (round off to two decimal places) that may be added before this transformer exceeds its rated kVA is \rule{1cm}{0.15mm}.
+\hfill{\brak{2019}}
+
+\item A 220 V DC shunt motor takes 3 A at no-load. It draws 25 A when running at full-load at 1500 rpm . The armature and shunt resistances are $0.5 \Omega$ and $220 \Omega$, respectively. The noload speed in rpm (round off to two decimal places) is \rule{1cm}{0.15mm} 
+    \hfill{\brak{2019}}
+    
+  
+  \item A delta-connected, $3.7 \mathrm{~kW}, 400 {~V}$ (line), three-phase, 4-pole, $50-{Hz}$ squirrel-cage induction motor has the following equivalent circuit parameters per phase referred to the stator: $R_{1}=5.39 \Omega, R_{2}=5.72 \Omega, X_{1}=X_{2}=8.22 \Omega$. Neglect shunt branch in the equivalent circuit. The starting line current in amperes (round off to two decimal places) when it is connected to a 100 V (line), 10 Hz , three-phase AC source is \rule{1cm}{0.15mm} .
+   \hfill{\brak{2019}}
+%33
+\item A 220 V (line), three-phase, Y-connected, synchronous motor has a synchronous impedance of $(0.25+j 2.5) \frac{\Omega}{phase} $ . The motor draws the rated current of 10 A at 0.8 pf leading. The rms value of line-to-line internal voltage in volts (round off to two decimal places) is
+\rule{1cm}{0.15mm} .
+\hfill{\brak{2019}}
+  \item  A three-phase $50 {~Hz}, 400 {kV}$ transmission line is 300 km long. The line inductance is $1 {mH} / {km}$ per phase, and the capacitance is $0.01 \frac{\mu {~F} }{ {km}}$ per phase. The line is under open circuit condition at the receiving end and energized with 400 kV at the sending end, the receiving end line voltage in kV (round off to two decimal places) will be \rule{1cm}{0.15mm} .
+\hfill{\brak{2019}}
+  \item  {~A} $ 30 {kV}, 50 {~Hz}, 50 {MVA}$ generator has the positive, negative, and zero sequence reactances of $0.25 {pu}, 0.15 {pu}$, and 0.05 pu , respectively. The neutral of the generator is grounded with a reactance so that the fault current for a bolted LG fault and that of a bolted three-phase fault at the generator terminal are equal. The value of grounding reactance in ohms (round off to one decimal place) is \rule{1cm}{0.15mm} .
+  \hfill{\brak{2019}}
+ \item In the single machine infinite bus system shown below, the generator is delivering the real power of 0.8 pu at 0.8 power factor lagging to the infinite bus. The power angle of the generator in degrees (round off to one decimal place) is  \rule{1cm}{0.15mm} . 
+ \input{figs/fig2.tex}
+ \hfill{\brak{2019}}
+  
+\item  In a 132 kV system, the series inductance up to the point of circuit breaker location is 50 mH . The shunt capacitance at the circuit breaker terminal is $0.05 \mu {~F}$. The critical value of resistance in ohms required to be connected across the circuit breaker contacts which will give no transient oscillation is $\rule{1cm}{0.15mm} . $ 
+\hfill{\brak{2019}}
+
+
+  \item In a DC-DC boost converter, the duty ratio is controlled to regulate the output voltage at 48 V . The input DC voltage is 24 V . The output power is 120 W . The switching frequency is 50 kHz . Assume ideal components and a very large output filter capacitor. The converter operates at the boundary between continuous and discontinuous conduction modes. The value of the boost inductor (in $\mu {H}$ ) is $\rule{1cm}{0.15mm} . $ 
+  \hfill{\brak{2019}}
+
+  \item A fully-controlled three-phase bridge converter is working from a $415 {~V}, 50 {~Hz} {AC}$ supply. It is supplying constant current of 100 A at 400 V to a DC load. Assume large inductive smoothing and neglect overlap. The rms value of the AC line current in amperes (round off to two decimal places) is $\rule{1cm}{0.15mm} . $ 
+  \hfill{\brak{2019}}
+  
+  
+  
+
+\item A single-phase fully-controlled thyristor converter is used to obtain an average voltage of 180 V with 10 A constant current to feed a DC load. It is fed from single-phase AC supply of $230 {~V}, 50 {~Hz}$. Neglect the source impedance. The power factor (round off to two decimal places) of AC mains is $\rule{1cm}{0.15mm} . $ 
+\hfill{\brak{2019}}
+
+
+\end{enumerate}
+\end{document}
