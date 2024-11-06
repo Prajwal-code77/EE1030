@@ -1,0 +1,4 @@
+\beamer@sectionintoc {2}{Problem}{3}{0}{1}
+\beamer@sectionintoc {3}{Solution}{4}{0}{2}
+\beamer@subsectionintoc {3}{1}{Setting Up the Equation}{4}{0}{2}
+\beamer@subsectionintoc {3}{2}{Directional and Normal Vectors}{5}{0}{2}
