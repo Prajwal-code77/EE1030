@@ -21,21 +21,8 @@
 \headcommand {\beamer@subsectionentry {0}{3}{2}{5}{Directional and Normal Vectors}}
 \headcommand {\slideentry {3}{2}{1}{5/5}{Directional and Normal Vectors}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\slideentry {3}{2}{2}{6/6}{Directional and Normal Vectors}{0}}
-\headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@sectionpages {4}{6}}
-\headcommand {\beamer@subsectionpages {5}{6}}
-\headcommand {\sectionentry {4}{Codes}{7}{Codes}{0}}
-\headcommand {\beamer@subsectionpages {7}{6}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{7}{C Code for Calculating Vectors}}
-\headcommand {\slideentry {4}{1}{1}{7/7}{C Code for Calculating Vectors}{0}}
-\headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{8}{Plotting the Figure using Python}}
-\headcommand {\slideentry {4}{2}{1}{8/8}{Plotting the Figure using Python}{0}}
-\headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@partpages {1}{8}}
-\headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\beamer@sectionpages {7}{8}}
-\headcommand {\beamer@documentpages {8}}
-\headcommand {\gdef \inserttotalframenumber {8}}
+\headcommand {\beamer@partpages {1}{5}}
+\headcommand {\beamer@subsectionpages {5}{5}}
+\headcommand {\beamer@sectionpages {4}{5}}
+\headcommand {\beamer@documentpages {5}}
+\headcommand {\gdef \inserttotalframenumber {5}}

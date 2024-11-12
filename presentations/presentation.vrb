@@ -1,0 +1,33 @@
+\frametitle{Plotting the Figure using Python}
+\lstset{basicstyle=\tiny\ttfamily, breaklines=true}
+\begin{lstlisting}
+import matplotlib.pyplot as plt
+
+# Normal and direction vectors
+normal_vector = [1, 1]
+direction_vector = [1, -1]
+line_points = [(x, 4 - x) for x in range(-8, 9)]
+
+x_line, y_line = zip(*line_points)
+shifted_origin = [2, 2]
+
+# Create the plot
+plt.quiver(*shifted_origin, *normal_vector, color='r', angles='xy', scale_units='xy', scale=1,
+           width=0.01, headwidth=5, label='Normal Vector', pivot='middle')
+plt.quiver(*shifted_origin, *direction_vector, color='b', angles='xy', scale_units='xy', scale=1,
+           width=0.01, headwidth=5, label='Direction Vector', pivot='middle')
+
+plt.plot(x_line, y_line, 'k--', label='Line (x + y = 4)', alpha=0.5)  # Dashed line
+
+plt.xlim(-5, 5)
+plt.ylim(-5, 5)
+plt.axhline(0, color='black', linewidth=0.5, ls='--')
+plt.axvline(0, color='black', linewidth=0.5, ls='--')
+plt.grid()
+plt.title('Normal and Direction Vectors for the Line x + y = 4')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.legend()
+plt.gca().set_aspect('equal', adjustable='box')
+plt.show()
+\end{lstlisting}
