@@ -1,0 +1,271 @@
+\documentclass[a4paper,12pt]{article}
+
+% Packages
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{titlesec}  % For title formatting
+\geometry{margin=1in}
+\setstretch{1.5}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Lab Report Title}
+\fancyhead[R]{\thepage}
+
+% Title Formatting
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+% Cover Page
+\title{ EIGEN VALUE CALCULATION
+    \vspace{2cm} % Adjust vertical space
+ % Add your logo here (change "logo.png" to the actual filename)
+    \vspace{1cm} % Adjust vertical space after the logo
+    \textbf{\Huge Lab Report Title} \\
+    \vspace{1cm} % Adjust vertical space
+    \large Course Code and Name \\
+    \vspace{0.5cm} % Adjust vertical space
+    \large Date of Submission
+}
+\author{Your Name}
+\date{}
+
+
+
+\title{EIGEN VALUE CALCULATION}
+
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to LaTeX to determine where to break the
+% lines. Using \AND forces a line break at that point. So, if LaTeX puts 3 of 4
+% authors names on the first line, and the last on the second line, try using
+% \AND instead of \And before the third author name.
+
+
+\author{%
+  B.Prajwal\\%\thanks{Use footnote for providing further information about author (webpage, alternative address)---\emph{not} for acknowledging funding agencies.} \\
+  %Department of Computer Science\\
+  %Cranberry-Lemon University\\
+  %Pittsburgh, PA 15213 \\
+  \texttt{ai24btech11005@iith.ac.in} \\
+  % examples of more authors
+  % \And
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \AND
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \And
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+  % \And
+  % Coauthor \\
+  % Affiliation \\
+  % Address \\
+  % \texttt{email} \\
+}
+
+
+\begin{document}
+\maketitle{}
+\section{Eigen values}
+An eigenvalue of a square matrix A is a scalar $\lambda$ such that there exists a nonzero vector v(called the eigenvector) satisfying the equation $A\overrightarrow{V}=\lambda \overrightarrow{V}$ Here ${\lambda}$ is called the eigen values for the matrix A. \textbf{$\lambda$} represents how much the eigenvector is stretched or compressed during the transformation by A.
+
+$\lambda$ represents how much the eigenvector is stretched or compressed during the transformation by A.\\\\Eigenvalues characterize fundamental properties of the matrix, such as its scaling behavior and stability. It helps us to solve system of linear differential equations, describe natural frequencies of vibrations, seperate modes of motion, distinguish states of energy and in many important applications etc.\\
+There are many algorithms which can be used to  find the eigen values , but each of them will have it's own pros and cons . Here are some algorithms which can be used to find the eigen values.
+
+
+\subsection{QR-ALGORITHM}
+The QR algorithm computes a Schur decomposition of a matrix. It is certainly one of the important algorithm in eigen value computations.. The total complexity of the algorithm is essentially $O(n^3)$ which can only be achieved in practice after several improvements are appropriately taken into account
+\subsection{Basic Form of QR Algorithm}
+Consider the QR factorization of the matrix A\\
+                \begin{center}
+                   $A=QR$ 
+                \end{center}   
+ where $Q*Q = I$ and R is upper triangular. We will now reverse the order of multiplication product of Q and R and eliminate R     
+ \begin{center}
+     $RQ=Q^{*}AQ$
+ \end{center}
+ With using the similarity condition RQ has the same eigen values as A.Hence by repeating this process several times the RQ matrix will become closer and closer to upper triangular matrix , then we can get the eigen values directly from the diagonal elements.
+ 
+    Initiate with$ A_0=A$\\
+    $A_k=R_kQ_k$\\
+  where $Q_k $and$ R_k$
+represents a  QRfactorization of 
+ QR factorization of $A_{k−1}$\\
+$A_{k-1}=Q_kR_k$
+  
+ \subsubsection{Process followed }
+ Finally we get an Matrices U and T such that $A=UTU^*$\\
+ Set $A_0=A$ and $U_0=I$
+ for $K=1....$\\
+ Compute QR factorization: $A_{k-1}=Q_kR_k$\\
+ Set $A_k=R_kQ_k$\\
+ Set $U_k=U_{k-1}Q_k$\\
+ Finally we will get $T=A_\infty$ and $U=U_\infty$\\
+  The elements of the matrix $A_k$ below the diagonal will converge to zero according to 
+  $|a_{ij}^{k}=O(|\lambda_i/\lambda_j|^k)$ for all $i>j$
+  \subsubsection{Disadvantages with Basic QR method}
+  1: The steps of the basic QR method is relatively expensive.\\
+  The complexity of one step of the basic QR method=$O(n^3)$\\
+  In an overly optimistic situation steps would be proportional to n, the algorithm would need $O(n^4)$ operations.\\
+  2:Many steps are required for the convergence "more than n". And the other rigourous problem is \textbf{if the eigen values are close to each other} it is often slow.\\
+  \section{Improving Basic QR method}
+  \subsection{Two-Phase Approach}
+  \subsubsection{Phase 1}
+ In the first phase we will compute a Hessenberg matrix H such that $A=UHU^*$, as H is not an upper triangular matrix , such a reduction can be done with a finite number of operations.
+ \textbf{By carrying out n-2 orthogonality transformations with Householder reflections we will now be able to reduce the matrix A to a Hessenberg matrix.}\\
+ Hence we will get a matrix H(Hessenberg part of A) such that $A=UHU^*$ So A and H have same eigen values as they are known as similar.
+ 
+  \subsubsection{Phase 2} 
+  Now we will apply the basic QR algorithm to the matrix H. Now one of the major improvement is that the complexity of one step is $O(n^2)$.\\
+  Apply \textbf{Wilkinson shifts} to accelerate convergence.\\
+  Perfor the QR decomposition of $H-\sigma I$ and update H to $H=RQ$. Hence, after the convergence the eigen values are found on the diagonal of the Hessenberg matrix. Hence it is a powerful method because it reduces computational cost and improves convergence with the wilkinsons shift.It has better numerical stability so it is an efficient way yo compute eigen values of higher dimensions with better numerical stability.
+  \section{Chosen Algorithm}
+ Hessenberg reduction with Householder reflections QR of matrix in Hessenberg form with Jacobi rotations but we should consider shifts and deflation (for symmetric matrices Wilkinson's shift , for non-symetric doubly implicit shift) We should also consider deflation\\
+ \subsection{Process involved}
+ 1: Hessenberg Reduction\\
+ 2: QR Iterations on Hessenberg Matrices\\
+ 3: Jacobi Rotations for Symmetric Matrices\\
+ 4: Shifts\\
+ 5:Deflation\\
+ 6:Convergence\\
+ \subsubsection{Computation}
+ 1:\textbf{Hessenberg Reduction}\\
+ Using HouseHolder Reflections:\\
+ Update $H_i=H_{i-1}-2w(w^TH_{i-1}$ it is applied to both rows to maintain symmetry.\\
+ Hence after n-2 steps , A is transformed to Hessenberg form H.\\
+ 2:\textbf{QR Algorithm with shifts}
+ In each iteration we should do:\\
+ 1: Computing the QR decomposition of H.
+ \begin{center}
+     $H-\mu{I}=QR$
+ \end{center}
+ 2: Update the Hessenberg matrix:\\
+ \begin{center}
+     $H \leftarrow RQ + \mu I$
+ \end{center}
+ 3:\textbf{Convergence}\\ For symmetric matrices: H becomes diagonal\\
+ For non-symmetric H becomes upper triangular(Schur form)\\
+ 4: \textbf{Wilkinson's shift(For symmetric Matrices)}\\
+ It accelerates convergence by choosing the most obvious value of $\mu$ for the shift based on the eigen values of the trailing 2X2 block:
+$H_k = 
+\begin{bmatrix}
+h_{n-1,n-1} & h_{n-1,n} \\
+h_{n,n-1} & h_{n,n}
+\end{bmatrix}$\\
+Compute the eigenvalues:\\
+$\lambda_{1,2}=\frac{h_{n-1,n-1}+h_{n,n}}{2}\pm \sqrt{({\frac{h_{n-1,n-1}+h_{n,n}}{2}})^2+({h_{n-1,n}})^2}$.\\
+Choose the $\mu$, The eigen valueclosest to $h_{n,n}$. because it ensures the rapid deflation of $h_{n,n-1}$
+which is last subdiagonal entry.\\
+5: \textbf{Implicit Double shift(For non-symmetric matrices)}\\
+This shift is based on the characteristic polynomial of the trailing 2X2 block:
+$p(\mu)=|H_k-\mu I$.
+This shifts helps us to handle complex eigen values effectively.\\
+Now the matrix is transformed as: \\
+$H \leftarrow RQ+\mu I$\\
+4:\textbf{Deflation}\\
+It is applied to reduce the size of the problem when subdiagonal elements become negligible.\\
+6:\textbf{Jacobi Rotations for Symmetric Matrices}\\
+ Jacobi rotations ensure the non-diagonal elements of H decrease systematically for symmetric matrices.\\
+ A given rotation matric=x $G(i,j,\theta)$ is defined as: \\
+ $G(i,j,\theta)= I- \sin\theta(e_ie_j^T+e_je_i^T) +(1-cos\theta)(e_ie_i^T+e_je_j^T)$\\
+ where $\theta$ is chosen to zero out $h_{i,j}$.\\
+ Update: $H\leftarrow G^THG$\\
+ \subsection{Total Time Complexity}
+ The total time complexity will depend on the matrix size and shifts used.\\
+ \subsubsection{Symmetric matrices}
+ $*$ Hessenberg reduction:$O(n^3)$\\
+ $*$ QR iterations with Wilkinson's shift:$O(n^2logn)$\\
+ $*$ Total:$O(n^3)$\\
+ \subsubsection{Non-symmetric Matrices}
+$*$ Hessenberg reduction:$O(n^3)$\\
+ $*$ QR iterations with implicit doubleshift:$O(n^2logn)$\\
+ $*$ Total:$O(n^3)$\\
+ \section{Advantages of this method}
+ \subsubsection{Efficiency}
+ 
+ $*$ Improves the computational efficiency.\\
+ $*$ \textbf{Implicit double shifts} reduce the number of iterations required for convergence.\\
+ $*$\textbf{ Deflation} minimizes the effective problem size dynamically, improving performance for matrices with seperable eigenvalues.
+ \subsubsection{Accuracy}
+ $*$ Implicit double shifts improve numerical stability by avoiding explicit shifts that can give us rounding errors.\\
+ $*$ Handles both symmetric and non-symmetric matrices with high precision.\\
+ \subsubsection{Suitability}
+ $*$ Well-suited for dense symmetric and non-symmetric matrices.\\
+ $*$ Can compute all eigenvalues effectively for matrices of small to medium size.\\
+ $*$ It is not suitable for very large or sparse matrices due to its $O(n^3)$ preprocessing cost.
+ \section{Comparision of various algorithms}
+\subsection{QR Algorithm (Basic)}
+\subsubsection{Time Complexity}
+$O(n^3)$ processing, $O(n^2)$ per iteration.
+\subsubsection{Accuracy}
+High for general matrices. May converge slowly for clustered eigenvalues.
+\subsubsection{Best Used for}
+General dense matrices.
+\subsection{QR Algorithm (Hessenberg+shifts}
+\subsubsection{Complexity}
+$O(n^3)$ preprocessing, $O(n^2)$ per iteration.
+\subsubsection{Accuracy}
+High, faster convergence than basic QR. Handles symmetric and non-symmetric matrices.
+\subsubsection{ Best Used for}
+General dense matrices, symmetric or non-symmetric.
+\subsection{QR Algorithm (Hessenberg + Implicit Double Shifts + Deflation)}
+\subsubsection{Complexity}
+$O(n^3) preprocessing$ , $O(n^2)$ per iteration with faster convergence.
+\subsubsection{Accuracy}
+High for dense matrices. Implicit shifts accelerate convergence. Deflation reduces effective problem size.
+\subsubsection{Best used for}
+Dense symmetric and non-symmetric matrices. Preferred for computing all eigenvalues.
+\subsection{Jacobi}
+\subsubsection{Complexity}
+$O(n^3)$
+\subsubsection{Accuracy}
+Very high for symmetric matrices .
+\subsubsection{Best used for}
+Small-to-medium symmetric matrices.
+\subsection{Lanczos}
+\subsubsection{Complexity}
+$O(nk),k<<n$
+\subsubsection{Accuracy}
+High for a subset of eigenvalues. May need reorthogonalization for many eigenvalues.
+\subsubsection{Best Used for}
+Sparse symmetric matrices, few eigenvalues.
+\subsection{Arnoldi}
+\subsubsection{Complexity}
+$O(n^2K),k<<n$ .
+\subsubsection{Accuracy}
+High for a subset of eigenvalues. Stability depends on reorthogonalization.
+\subsubsection{Best Used for }
+Sparse non-symmetric matrices, few eigenvalues.
+\subsection{Divide-and-conquer}
+\subsubsection{Complexity}
+$O(n^3)$
+\subsubsection{Accuracy}
+High accuracy. Parallelizable.
+\subsubsection{Best Used for}
+Dense symmetric matrices, large-scale computation.
+
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+
+
+\end{document}
