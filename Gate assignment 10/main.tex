@@ -1,0 +1,148 @@
+ \let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{XE-2019}
+\author{AI24BTECH11005 - Bhukya Prajwal Naik
+}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+\begin{enumerate}
+		\setcounter{enumi}{0}
+       \item An alternating copolymer has number-averaged molecular weight of $10^{5} g {mol}^{-1}$ and degree of polymerization of 2210 . If one of the repeat units is ethylene, the other one is
+(Given: atomic weight of ${H}=1, {C}=12, {F}=19$ and ${Cl}=35.5$ )
+        \begin{multicols}{1}
+            \begin{enumerate}
+                \item $-{CH}_{2}-{CH}\left({CH}_{3}\right)^{-}$
+                \item  $-{CH}_{2}-{CHCl}-$
+                \item $-{CF}_{2}-{CF}_{2}-$
+                \item$-{CH}_{2}-{CH}\left({C}_{6} {H}_{5}\right)^{-}$
+            \end{enumerate}
+        \end{multicols}
+
+
+    \item Match the sintering processes in column I with the most suitable products in column II.
+    \section*{Column I}
+ (P) Solid state sintering\\
+(Q) Liquid phase sintering\\
+ (R) Spark plasma sintering\\
+ (S) Laser sintering\\
+
+
+		\begin{multicols}{1}
+			\begin{enumerate}
+	\item P-4; Q-1; R-2; S-3
+\item  P-3; Q-2; R-1; S-4
+\item P-3; Q-2; R-4; S-1
+\item  P-2; Q-3; R-1; S-4
+			\end{enumerate}
+		\end{multicols}
+
+
+    \item Which one of the following conditions will NOT favour the separation of impurities in zone refining process?
+       
+            \begin{enumerate}
+             \item  Increase in the gap between solidus and liquidus lines
+\item  Increase in the solubility of impurities in solid as compared to that in liquid phase
+\item Agitation of melt
+\item  Low cooling rate of melt
+            \end{enumerate}
+       
+
+
+    \item A monochromatic X-ray beam of wavelength 0.154 nm is incident on a cubic crystal having lattice parameter ${a}=0.245 {~nm}$. The diffraction angle (20) for the first order reflection from a set of planes represented by the schematic plane below is $\qquad$ degrees. (round off to 1 decimal place)
+    \input{figs/fig1.tex}
+    \newpage
+		
+
+ 
+    \item Nickel corrodes at 298 K in a solution of 0.06 M nickel chloride having pH 4 . Assuming complete dissociation of nickel chloride, the partial pressure of hydrogen required to stop the corrosion of nickel is $\qquad$ atm. (round off to the nearest integer)
+(Given: Standard reduction potential of nickel $=-0.25 {~V}$,
+Faraday's constant $=96500 {C} {mol}^{-1}$, Universal gas constant $=8.314 {~J} {~K}^{-1} {~mol}^{-1}$ )
+		
+
+
+    \item The potential energy, ${U}(r)$, of a pair of atoms spaced at a distance $r$ in a solid is given by
+$$
+{U}(r)=-\frac{A}{r^{3}}+\frac{B}{r^{7}}
+$$
+
+The equilibrium distance between the atom pair is $\qquad$ nm.
+(round off to 2 decimal places)
+(Given: Constants $A=6 \times 10^{-20} {~J} {~nm}^{3}, B=2.1 \times 10^{-22} {~J} {~nm}^{7}$ )
+
+    \item  Tensile true stress - true strain curve for plastic region of an alloy is given by $\sigma({MPa})=600 \varepsilon^{n}$.
+When true strain is 0.05 , the true stress is 350 MPa . For the same alloy, when engineering strain is 0.12 then the engineering stress is $\qquad$ MPa. (round off to the nearest integer)
+
+
+    \item Box-S has 2 white and 4 black balls and box-T has 5 white and 3 black balls. A ball is drawn at random, from the box-S and put in box-T. Subsequently, the probability of drawing a white ball from box-T is $\qquad$ . (round off to 2 decimal places)
+    \item The zero point energy of an electron in a box of 0.2 nm width is $\qquad$ eV.
+(round off to 1 decimal place)
+(Given: Planck's constant $=6.63 \times 10^{-34} {~J}$ s, electron mass $=9.11 \times 10^{-31} {~kg}$ and $1 {eV}=1.6 \times 10^{-19} {~J}$ )
+
+\item The de Broglie wavelength of an electron accelerated across a 300 kV potential in an electron microscope is $\qquad$ $\times 10^{-12} {~m}$. Ignore relativistic effects. (round off to 2 decimal places)
+(Given: Planck's constant $=6.63 \times 10^{-34} {~J}$ s, electron rest mass $=9.11 \times 10^{-31} {~kg}$, electron charge $=1.6 \times 10^{-19} {C}$ )
+     
+    \item  A stress of 17 MPa is applied to a polymer serving as a fastener in a complex assembly. At constant strain the stress drops to 16.6 MPa after 100 hours. The stress on the polymer must remain above 14.5 MPa in order for the assembly to function properly. The expected life of the assembly is $\qquad$ hours. (round off to the nearest integer)
+    
+    
+
+    \item  A piezoelectric material has a Young's modulus of 72 GPa . The stress required to change the polarization from 640 to $645 {C} {m} {m}^{-3}$ is $\qquad$ MPa. (round off to the nearest integer)
+    \item  An iron bar magnet having coercivity of $7000 \mathrm{~A} \mathrm{~m}^{-1}$ is to be demagnetized. The bar is introduced fully inside a 0.25 m long solenoid having 150 turns of wire. The electric current required to generate the necessary magnetic field is $\qquad$ A. (round off to 1 decimal place)
+
+        
+ \end{enumerate}
+
+\end{document}
